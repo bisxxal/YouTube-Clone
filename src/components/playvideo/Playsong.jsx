@@ -68,11 +68,11 @@ function Playsong() {
            
             <div className='flex lg:mt-0 mt-3'> 
                <div className='bg-[#272727] flex items-center justify-center  rounded-full'>
-               <span className='  hover:bg-[#3F3F3F] px-4 py-[5px] text-[11px] font-medium  inline-flex items-center lg:ml-[1px]  border-r border-gray-300'> <img className='w-[17px] mr-[8px]' src={assets.like} alt="" />{APIdata?valueConverter(APIdata.statistics.likeCount):"23M"}</span>
-                <span className=' hover:bg-[#3F3F3F] px-4 py-[5px] text-[11px] font-medium rounded-full inline-flex items-center ml-[1px]'>   <img className='w-[17px] mr-[8px]' src={assets.dislike} alt="" /></span>
+               <span className='  hover:bg-[#3F3F3F] px-4 py-[5px] text-[11px] font-medium  inline-flex items-center lg:ml-[1px]  border-r border-[gray]'> <img className='w-[17px] mr-[8px]  filter invert-[1] ' src={assets.like} alt="" />{APIdata?valueConverter(APIdata.statistics.likeCount):"23M"}</span>
+                <span className=' hover:bg-[#3F3F3F] px-4 py-[5px] text-[11px] font-medium rounded-full inline-flex items-center ml-[1px]'>   <img className='w-[17px] mr-[8px] filter invert-[1] ' src={assets.dislike} alt="" /></span>
                </div>
-                <span className='bg-[#272727] hover:bg-[#3F3F3F] px-4 py-[5px] text-[11px] font-medium rounded-full inline-flex items-center ml-[15px]'>   <img className='w-[17px] mr-[8px]' src={assets.share} alt="" />Share</span>
-                <span className='bg-[#272727] hover:bg-[#3F3F3F] px-4 py-[5px] text-[11px] font-medium rounded-full inline-flex items-center ml-[15px]'>   <img className='w-[17px] mr-[8px]' src={assets.save} alt="" />Save</span>
+                <span className='bg-[#272727] hover:bg-[#3F3F3F] px-4 py-[5px] text-[11px] font-medium rounded-full inline-flex items-center ml-[15px]'>   <img className='w-[17px] mr-[8px]  filter invert-[1] ' src={assets.share} alt="" />Share</span>
+                <span className='bg-[#272727] hover:bg-[#3F3F3F] px-4 py-[5px] text-[11px] font-medium rounded-full inline-flex items-center ml-[15px]'>   <img className='w-[17px] mr-[8px]  filter invert-[1] ' src={assets.save} alt="" />Save</span>
             </div>
         </div>
 
@@ -103,9 +103,9 @@ function Playsong() {
                 <h4 className='font-medium text-[12px] '>{item.snippet.topLevelComment.snippet.authorDisplayName} &bull; <span className='text-[11px] font-semibold  text-[#7b7777]'> {moment(item.snippet.topLevelComment.snippet.publishedAt).fromNow()}</span> </h4>
                 <p className='text-[11px]'>{item.snippet.topLevelComment.snippet.textDisplay}</p>
                 <div className='comment-section flex items-center'> 
-                <img className='w-[12px] h-[18px] rounded-full ' src={assets.like} alt="" />
+                <img className='w-[18px] h-[18px]   filter invert-[1] ' src={assets.like} alt="" />
                 <span className='mx-3 text-[13px]'>{valueConverter(item.snippet.topLevelComment.snippet.likeCount)}</span>
-                <img className='w-[12px] h-[18px] rounded-full ' src={assets.dislike} alt="" />
+                <img className='w-[18px] h-[18px]   filter invert-[1] ' src={assets.dislike} alt="" />
                 </div>
             </div>
         </div>

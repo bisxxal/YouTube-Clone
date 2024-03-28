@@ -16,7 +16,6 @@ import search from './search.png'
 import jack from './jack.png'
 import thumbnail1 from './thumbnail1.png'
 import compass from './compass.png'
-import video from './video.mp4'
 import dislike from './dislike.png'
 import like from './like.png'
 import save from './save.png'
@@ -31,5 +30,5 @@ home, game_icon,sports,tech,music,news ,entertainment,jack ,thumbnail1 ,
 
 youtubelogo,
 like , dislike, share ,save ,userprofile,compass,
- video
+ 
 }
