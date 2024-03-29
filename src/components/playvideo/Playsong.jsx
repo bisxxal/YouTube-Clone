@@ -13,7 +13,7 @@ function Playsong() {
     const [APIdata ,setAPIData] = useState(null);
     const [channelData ,setchannelData] = useState(null);
     const [commentData ,setcommentData] = useState([]);
-     console.log(videoId);
+    
     const feathData = async()=>{ 
         const videourl = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${videoId}&key=${API_KEY}`
         await fetch(videourl).then(responce=>responce.json()).then(data=>setAPIData(data.items[0]))
