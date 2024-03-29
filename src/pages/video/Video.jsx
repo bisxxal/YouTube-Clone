@@ -12,7 +12,6 @@ function Video() {
       <Playsong videoId={videoId}/>
       <Recomded categoryId={categoryId}/>
 
-{/* <Sidebar/> */}
     </div>
   )     
 }

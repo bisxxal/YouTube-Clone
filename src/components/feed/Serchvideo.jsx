@@ -27,10 +27,10 @@ function Serchvideo() {
   return (
     <>
    
-    <Link to={'/search_query'} className='w-full flex flex-col items-center  min-h-[100vh]  overflow-hidden'>
+    <Link   className='w-full flex flex-col items-center  min-h-[100vh]  overflow-hidden'>
      
      {data.map((item, index) => (
-       <Link   className='flex  my-4  gap-4'>
+       <Link to={`/video/${item.id.videoId}`}   className='flex  my-4  gap-4'>
           <img className=' w-[220px] h-[120px] lg:h-[unset] lg:w-[unset] rounded-lg' src={item.snippet.thumbnails.medium.url} alt="" />
                 <div className='py-1 lg:w-[500px]  h-[120px]  flex flex-col '>
                     <p className='vdname text-white text-[14px] font-medium '>{item.snippet.title}</p>

@@ -6,6 +6,7 @@ import Home from './pages/Home/Home'
 import Video from './pages/video/Video'
 import context from './context/context'
 import Serchvideo from './components/feed/Serchvideo'
+import Video2 from './pages/video/Video2'
 function App() {
   const [expand, setexpand] = useState(false)
   const [resexpand, setresexpand] = useState(false)
@@ -27,6 +28,7 @@ const value = {expand , setexpand,showsearch,resexpand, setresexpand ,catagorie,
     <Routes>
   <Route path='/' element={<Home />} />
        <Route path='/video/:categoryId/:videoId' element={<Video />} />
+       <Route path='/video/:videoId' element={<Video2 />} />
        <Route path='/search_query' element={<Serchvideo />} />
   </Routes>
 
