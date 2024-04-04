@@ -24,7 +24,6 @@ const value = {expand , setexpand,showsearch,resexpand, setresexpand ,catagorie,
     <context.Provider value={value}>
  
  <Navbar/>
-{/* <Serchvideo/> */}
     <Routes>
   <Route path='/' element={<Home />} />
        <Route path='/video/:categoryId/:videoId' element={<Video />} />
