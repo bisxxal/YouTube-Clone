@@ -90,10 +90,6 @@ function Playsong() {
 
      <h4 className='font-bold mb-3'> {APIdata ? valueConverter(APIdata.statistics.commentCount) : '1000'}  comments</h4>
 
-{/* //comments  section*/}
-
- 
-
 {
     commentData.map((item,index)=>{
         return(
